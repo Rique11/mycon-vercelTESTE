@@ -14,7 +14,6 @@ import {
   CheckCircle2
 } from 'lucide-react';
 import Link from 'next/link';
-
 // Custom CSS for animations
 const CustomStyles = () => (
   <style jsx global>{`
@@ -111,9 +110,12 @@ const Header = () => {
               {item}
             </a>
           ))}
-          <button className="px-6 py-2.5 bg-[#005CE5] hover:bg-[#004bbd] text-white rounded-full font-medium transition-all hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(0,92,229,0.4)] text-sm">
+          
+          <Link href="/dashboard" className="px-6 py-2.5 bg-[#005CE5] hover:bg-[#004bbd] text-white rounded-full font-medium transition-all hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(0,92,229,0.4)] text-sm"
+           
+          >
             Acessar Agora
-          </button>
+          </Link>
         </div>
       </div>
     </nav>
@@ -381,10 +383,10 @@ export default function App() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <button className="px-8 py-4 bg-[#005CE5] hover:bg-[#004bbd] text-white rounded-full font-bold text-lg transition-all hover:-translate-y-1 shadow-[0_10px_30px_rgba(0,92,229,0.3)] flex items-center justify-center gap-2 group">
+              <Link href="/dashboard" className="px-8 py-4 bg-[#005CE5] hover:bg-[#004bbd] text-white rounded-full font-bold text-lg transition-all hover:-translate-y-1 shadow-[0_10px_30px_rgba(0,92,229,0.3)] flex items-center justify-center gap-2 group">
                 LIBERAR MEU ACESSO
                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-              </button>
+              </Link>
               <button className="px-8 py-4 bg-white hover:bg-slate-50 text-slate-900 rounded-full font-bold text-lg transition-all hover:-translate-y-1 border border-slate-200 shadow-sm">
                 Ver Demonstração
               </button>
@@ -461,9 +463,9 @@ export default function App() {
           </p>
 
           <div className="flex flex-col items-center gap-4">
-            <button className="px-12 py-5 bg-[#005CE5] hover:bg-[#004bbd] text-white rounded-full font-bold text-xl transition-all duration-300 hover:-translate-y-2 shadow-[0_10px_40px_rgba(0,92,229,0.4)]">
+            <Link href="/dashboard" className="px-12 py-5 bg-[#005CE5] hover:bg-[#004bbd] text-white rounded-full font-bold text-xl transition-all duration-300 hover:-translate-y-2 shadow-[0_10px_40px_rgba(0,92,229,0.4)]">
               GARANTIR Meu ACESSO
-            </button>
+            </Link>
             <p className="text-sm text-[#005CE5] font-medium tracking-wide uppercase">
               Lote limitado • 100% Gratuito
             </p>
